@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Dermatology for Skin of Color — Metropolis (Service Page Draft)</title>
+<style>
+  :root{
+    --paper:#E8E3D9;--paper-2:#E1DBCF;--card:#F1EDE5;
+    --ink:#211A15;--ink-soft:#6B5D4F;--ink-faint:#9A8D7D;
+    --line:#D3C9B9;--line-strong:#C3B7A3;
+    --clay:#8A4A2E;--clay-deep:#743C24;
+    --review-bg:#F3E3D0;--review-line:#C99A6C;
+    --s1:#EBD3BB;--s2:#DCB790;--s3:#C99A6C;--s4:#AE7346;--s5:#8C5433;--s6:#623A25;--s7:#38241C;
+    --serif:"Hoefler Text","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:ui-sans-serif,-apple-system,"Helvetica Neue","Segoe UI",Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;--wrap:1160px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+    font-size:clamp(1rem,.97rem + .18vw,1.06rem);line-height:1.72;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;letter-spacing:-.012em;text-wrap:balance;}
+  p{margin:0;}a{color:inherit;}img{max-width:100%;display:block;}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(1.25rem,4vw,2.75rem);}
+  .eyebrow{font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--clay);}
+  .eyebrow.on-dark{color:#D9B79B;}
+  .lede{font-size:clamp(1.06rem,1rem + .5vw,1.28rem);line-height:1.6;color:var(--ink-soft);}
+  .whisper{height:3px;display:grid;grid-template-columns:repeat(7,1fr);}
+  .whisper span:nth-child(1){background:var(--s1);}.whisper span:nth-child(2){background:var(--s2);}
+  .whisper span:nth-child(3){background:var(--s3);}.whisper span:nth-child(4){background:var(--s4);}
+  .whisper span:nth-child(5){background:var(--s5);}.whisper span:nth-child(6){background:var(--s6);}
+  .whisper span:nth-child(7){background:var(--s7);}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--sans);font-weight:600;font-size:.82rem;
+    letter-spacing:.1em;text-transform:uppercase;padding:1rem 1.6rem;border:1px solid var(--ink);cursor:pointer;
+    transition:background .2s,color .2s;min-height:52px;background:var(--ink);color:var(--paper);text-decoration:none;}
+  .btn:hover{background:transparent;color:var(--ink);}
+  .btn.block{width:100%;}
+  a.textlink{display:inline-flex;align-items:center;min-height:44px;font-size:.82rem;font-weight:600;letter-spacing:.06em;
+    color:var(--ink);text-decoration:none;border-bottom:1px solid var(--clay);padding:.3rem 0;}
+  a.textlink:hover{color:var(--clay);}
+
+  /* review marks (YMYL) */
+  .review{background:var(--review-bg);border-bottom:1px dashed var(--review-line);color:var(--clay-deep);
+    font-size:.9em;padding:0 .25em;border-radius:2px;}
+  .review::before{content:"⚑ ";font-size:.85em;}
+
+  header.nav{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 92%,transparent);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:72px;}
+  .mark{font-family:var(--serif);font-size:1.34rem;letter-spacing:.06em;text-decoration:none;color:var(--ink);}
+  .mark small{display:block;font-family:var(--sans);font-size:.54rem;letter-spacing:.4em;text-transform:uppercase;color:var(--ink-soft);margin-top:3px;font-weight:600;}
+  .nav-cta{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--clay);padding:.4rem 0;min-height:44px;display:inline-flex;align-items:center;}
+
+  .crumb{border-bottom:1px solid var(--line);}
+  .crumb-in{padding:.9rem 0;font-size:.74rem;letter-spacing:.06em;color:var(--ink-faint);display:flex;gap:.5rem;flex-wrap:wrap;}
+  .crumb-in a{color:var(--ink-soft);text-decoration:none;}
+  .crumb-in a:hover{color:var(--clay);}
+  .crumb-in span{color:var(--ink-faint);}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;}
+  .hero .photo{position:absolute;inset:0;background:linear-gradient(120deg,var(--s3) 0%,var(--s4) 40%,var(--s6) 100%);}
+  .hero .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,15,11,.8),rgba(20,15,11,.45));}
+  .hero .plabel{position:absolute;left:20px;bottom:14px;z-index:2;font-family:var(--mono);font-size:.64rem;color:rgba(255,255,255,.8);letter-spacing:.05em;}
+  .hero-in{position:relative;z-index:2;padding:clamp(3rem,7vw,5.5rem) 0;max-width:720px;color:#F2ECE2;}
+  .hero h1{color:#F6F1E8;font-size:clamp(2.3rem,1.5rem + 3.4vw,3.8rem);margin-top:.9rem;}
+  .hero .lede{color:#E7DDCE;margin-top:1.3rem;max-width:48ch;}
+  .hero .row{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap;margin-top:2rem;}
+  .hero .byline{margin-top:1.4rem;font-size:.82rem;color:#D9C9B6;}
+
+  /* two-col layout */
+  .layout{display:grid;grid-template-columns:1fr 340px;gap:clamp(2rem,5vw,4rem);padding:clamp(3rem,6vw,5rem) 0;align-items:start;}
+  @media(max-width:920px){.layout{grid-template-columns:1fr;}}
+  .content .block{padding:clamp(2rem,4vw,2.8rem) 0;border-top:1px solid var(--line);}
+  .content .block:first-child{border-top:0;padding-top:0;}
+  .content .block .bnum{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--clay);text-transform:uppercase;}
+  .content h2{font-size:clamp(1.5rem,1.2rem + 1.4vw,2.1rem);margin:.5rem 0 1rem;}
+  .content h3{font-size:1.14rem;font-weight:600;margin:1.4rem 0 .4rem;}
+  .content p{max-width:64ch;margin-bottom:1rem;}
+  .content ul{max-width:64ch;padding-left:0;list-style:none;margin:1rem 0;}
+  .content ul li{padding-left:1.4rem;position:relative;margin-bottom:.7rem;}
+  .content ul li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;background:var(--clay);border-radius:50%;}
+  .callout{background:var(--card);border-left:2px solid var(--clay);padding:1.2rem 1.4rem;border-radius:2px;margin:1.4rem 0;max-width:64ch;}
+  .callout p{margin:0;font-size:.96rem;}
+
+  .compare{width:100%;border-collapse:collapse;margin:1.2rem 0;max-width:64ch;font-size:.94rem;}
+  .compare th,.compare td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid var(--line);vertical-align:top;}
+  .compare th{font-family:var(--sans);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;}
+  .compare td:first-child{font-weight:600;width:38%;}
+
+  .proof{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0;max-width:64ch;}
+  @media(max-width:520px){.proof{grid-template-columns:1fr;}}
+  .proof .ba{aspect-ratio:1/1;border-radius:2px;position:relative;overflow:hidden;
+    background:linear-gradient(140deg,var(--s5),var(--s6));border:1px solid var(--line);}
+  .proof .ba span{position:absolute;left:12px;bottom:10px;font-family:var(--mono);font-size:.6rem;color:rgba(255,255,255,.82);}
+
+  /* provider byline */
+  .byline-card{display:flex;gap:1.2rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1.4rem;margin-top:1rem;max-width:64ch;}
+  .byline-card .pic{width:74px;height:90px;border-radius:2px;flex:none;background:linear-gradient(150deg,var(--s6),var(--s4));position:relative;}
+  .byline-card .pic span{position:absolute;inset:auto 0 6px 0;text-align:center;font-family:var(--mono);font-size:.52rem;color:rgba(255,255,255,.75);}
+  .byline-card h3{font-size:1.2rem;margin:0;}
+  .byline-card .role{font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);font-weight:600;margin-top:.3rem;}
+  .byline-card .cred{font-size:.8rem;color:var(--ink-soft);margin-top:.5rem;}
+
+  /* FAQ */
+  .faq{max-width:64ch;}
+  .faq details{border-top:1px solid var(--line);padding:1rem 0;}
+  .faq details[open] summary{color:var(--clay);}
+  .faq summary{font-family:var(--serif);font-size:1.1rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+";color:var(--clay);font-family:var(--sans);}
+  .faq details[open] summary::after{content:"–";}
+  .faq details p{margin:.9rem 0 0;color:var(--ink-soft);font-size:.96rem;}
+
+  /* sticky rail */
+  .rail{position:sticky;top:96px;display:flex;flex-direction:column;gap:1.2rem;}
+  @media(max-width:920px){.rail{position:static;}}
+  .rail-card{background:var(--ink);color:var(--paper);border-radius:4px;padding:1.6rem;}
+  .rail-card .eyebrow{color:#D9B79B;}
+  .rail-card h3{color:#F6F1E8;font-size:1.3rem;margin:.6rem 0 .5rem;}
+  .rail-card p{font-size:.9rem;color:#CDBFAE;margin-bottom:1.2rem;}
+  .rail-card .btn.on{background:#F1EDE5;color:var(--ink);border-color:#F1EDE5;}
+  .rail-card .fine{font-size:.72rem;color:#A99A88;margin-top:.9rem;}
+  .rail-related{border:1px solid var(--line);border-radius:4px;padding:1.4rem;background:var(--paper-2);}
+  .rail-related .eyebrow{color:var(--clay);}
+  .rail-related ul{list-style:none;padding:0;margin:.9rem 0 0;}
+  .rail-related li{border-top:1px solid var(--line);}
+  .rail-related li:first-child{border-top:0;}
+  .rail-related a{display:flex;justify-content:space-between;align-items:center;padding:.7rem 0;min-height:48px;font-size:.92rem;color:var(--ink);text-decoration:none;}
+  .rail-related a:hover{color:var(--clay);}
+  .rail-related a .ar{color:var(--clay);}
+
+  footer{padding:3rem 0;background:var(--paper-2);border-top:1px solid var(--line);}
+  .foot-in{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;align-items:center;color:var(--ink-soft);font-size:.82rem;}
+
+  .notes{background:#231A14;color:#C9BCAB;}
+  .notes .wrap{padding:clamp(3rem,6vw,4.5rem) clamp(1.25rem,4vw,2.75rem);}
+  .notes h2{color:#F1EAE0;font-size:clamp(1.4rem,1.2rem + 1.2vw,2rem);font-weight:500;}
+  .notes .grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem 2.6rem;margin-top:1.8rem;}
+  @media(max-width:720px){.notes .grid{grid-template-columns:1fr;}}
+  .notes .n{border-left:1px solid #6d4a30;padding-left:1.1rem;}
+  .notes .n h4{font-family:var(--sans);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#D9B79B;margin:0 0 .3rem;}
+  .notes .n p{font-size:.88rem;color:#BCAF9F;}
+  .notes .gate{margin-top:1.8rem;border-top:1px solid #6d4a30;padding-top:1.3rem;font-size:.86rem;color:#BCAF9F;}
+  :focus-visible{outline:2px solid var(--clay);outline-offset:3px;}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"MedicalWebPage","name":"Dermatology for Skin of Color","url":"https://metropolisdermatology.com/dermatology-for-skin-of-color/",
+     "about":[{"@type":"MedicalCondition","name":"Melasma"},{"@type":"MedicalCondition","name":"Post-inflammatory hyperpigmentation"},{"@type":"MedicalCondition","name":"Keloid"}],
+     "audience":{"@type":"PeopleAudience","suggestedGender":"unisex","description":"Patients with Fitzpatrick skin types IV–VI"},
+     "lastReviewed":"[PENDING medical sign-off — Dr. Higgins]",
+     "reviewedBy":{"@type":"Physician","name":"Dr. Shauna Higgins","medicalSpecialty":"Dermatology"},
+     "isPartOf":{"@type":"MedicalClinic","name":"Metropolis Dermatology","url":"https://metropolisdermatology.com/"}},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"Is laser hair removal safe on darker skin?","acceptedAnswer":{"@type":"Answer","text":"[DRAFT — pending Dr. Higgins: device-dependent; requires wavelengths safe for deeper skin.]"}},
+      {"@type":"Question","name":"How is melasma treated on skin of color?","acceptedAnswer":{"@type":"Answer","text":"[DRAFT — pending Dr. Higgins.]"}},
+      {"@type":"Question","name":"Can chemical peels cause dark spots on skin of color?","acceptedAnswer":{"@type":"Answer","text":"[DRAFT — pending Dr. Higgins.]"}}
+    ]}
+  ]
+}
+</script>
+</head>
+<body class="notes">
+<div style="background:#8A4A2E;color:#F6ECE6;font-family:ui-sans-serif,-apple-system,Arial,sans-serif;padding:.75rem 1.25rem;font-size:.86rem;line-height:1.4;text-align:center;"><b>REVIEW COPY</b> · highlighted ⚑ items are notes and questions for your input. Please send feedback to Rick. · <a href="./" style="color:#F6ECE6;">All pages</a></div>
+<header class="nav">
+<div class="wrap nav-in">
+<a class="mark" href="#">Metropolis<small>Dermatology</small></a>
+<a class="nav-cta" href="#consult">Request a consultation</a>
+</div>
+</header>
+<nav aria-label="Breadcrumb" class="crumb">
+<div class="wrap crumb-in">
+<a href="#">Home</a><span>/</span><a href="#">Skin Expertise</a><span>/</span><span>Dermatology for Skin of Color</span>
+</div>
+</nav>
+<section class="hero">
+<div aria-label="A Metropolis dermatologist caring for a patient with deeper skin." class="photo" role="img"></div>
+<span class="plabel">Full-bleed photography · real skin-of-color patient &amp; provider</span>
+<div class="wrap hero-in">
+<p class="eyebrow on-dark">Dermatology for skin of color</p>
+<h1>Expert care for melanin-rich skin, from diagnosis to results.</h1>
+<p class="lede">Skin of color behaves differently, and it deserves dermatologists who treat it that way. At Metropolis, our providers and our technology were both chosen to care for the full range of skin tones safely.</p>
+<div class="row">
+<a class="btn on-dark" href="#consult" style="background:#F1EDE5;color:#211A15;border-color:#F1EDE5;">Request a consultation</a>
+<a class="textlink" href="#faq" style="color:#EBD3BB;border-color:#EBD3BB;">Common questions</a>
+</div>
+<p class="byline">Medically reviewed by <strong>Dr. Shauna Higgins</strong>, board-certified dermatologist <span class="review" style="background:rgba(243,227,208,.2);color:#EBD3BB;border-color:#D9B79B;">pending sign-off</span></p>
+</div>
+</section>
+<div class="wrap">
+<div class="layout">
+<div class="content">
+<section class="block">
+<span class="bnum">01 · What it is</span>
+<h2>What dermatology for skin of color means</h2>
+<p>Skin of color, broadly Fitzpatrick types IV through VI and much of type III, carries more active melanin. That single fact changes how skin conditions look, how they are diagnosed, and how they respond to treatment. Dermatology for skin of color is care that accounts for those differences at every step, rather than applying a one-size protocol built around lighter skin.</p>
+<p>It is not a separate specialty. It is dermatology practiced with the training, the experience, and the equipment to serve every skin tone equally well.</p>
+</section>
+<section class="block">
+<span class="bnum">02 · Why it's different</span>
+<h2>Why skin of color needs different expertise, not different marketing</h2>
+<p>This is the part most practices skip. The clinical realities that make experience matter <span class="review">Dr. Higgins: confirm the mechanisms to emphasize and correct any wording</span>:</p>
+<ul>
+<li><strong>Post-inflammatory hyperpigmentation.</strong> Inflammation that would fade on lighter skin can leave lasting dark marks on deeper skin, so treatment has to minimize inflammation, not just address the original concern. <span class="review">Dr. Higgins: confirm</span></li>
+<li><strong>Device and laser selection.</strong> Many light-based devices target pigment, and on darker skin the wrong wavelength or setting can burn or cause hypo- or hyperpigmentation. Choosing the right device is a safety decision, not a preference. <span class="review">Dr. Higgins: confirm the device categories we can and cannot use</span></li>
+<li><strong>Scarring tendency.</strong> Keloid and hypertrophic scarring are more common in some skin-of-color patients, which shapes how procedures are planned. <span class="review">Dr. Higgins: confirm</span></li>
+<li><strong>Diagnosis.</strong> Redness and some conditions can present differently on deeper skin, raising the risk of missed or delayed diagnosis without an experienced eye. <span class="review">Dr. Higgins: confirm</span></li>
+</ul>
+<div class="callout"><p>The through-line: on skin of color, avoiding harm is as much of the skill as delivering the result. That is what experience buys.</p></div>
+</section>
+<section class="block">
+<span class="bnum">03 · Who it's for</span>
+<h2>Who this care is for</h2>
+<p>Patients with medium to deep skin tones who want a dermatologist who has genuinely treated skin like theirs, whether the concern is medical or cosmetic. It is a fit if you are dealing with:</p>
+<ul>
+<li>Dark marks or uneven tone after acne, ingrown hairs, or irritation (post-inflammatory hyperpigmentation)</li>
+<li>Melasma or stubborn pigmentation</li>
+<li>Keloid or raised scars</li>
+<li>Acne and acne scarring on deeper skin</li>
+<li>An interest in cosmetic treatments and a wariness about whether they are safe for your skin tone</li>
+</ul>
+</section>
+<section class="block">
+<span class="bnum">04 · When extra caution matters</span>
+<h2>When we slow down</h2>
+<p>Some treatments carry more risk on deeper skin and call for a more conservative approach, a test spot, or a different device entirely. <span class="review">Dr. Higgins: confirm the specific contraindications and cautions to list here, e.g. certain lasers, aggressive peels, and how candidacy is assessed.</span> Where a treatment is not right for your skin, we will tell you, and offer the approach that is.</p>
+</section>
+<section class="block">
+<span class="bnum">05 · Risks &amp; what we work to avoid</span>
+<h2>The risks we plan around</h2>
+<p>Every procedure carries some risk. On skin of color, the ones we most actively work to prevent are pigment changes (both darkening and lightening) and scarring. <span class="review">Dr. Higgins: confirm this risk summary and add anything required for informed-consent accuracy.</span></p>
+<p style="color:var(--ink-faint);font-size:.9rem;">Individual results vary. This page is educational and is not medical advice; your provider will assess your skin directly.</p>
+</section>
+<section class="block">
+<span class="bnum">06 · How we compare</span>
+<h2>Why an experienced dermatologist, not a med spa</h2>
+<table class="compare">
+<tr><th>What matters on skin of color</th><th>Metropolis</th><th>Typical med spa</th></tr>
+<tr><td>Board-certified dermatologists on staff</td><td>Yes, with skin-of-color depth</td><td>Often non-physician-led</td></tr>
+<tr><td>Device range safe for deeper skin</td><td>Selected for the full Fitzpatrick range</td><td>Limited; one device fits some</td></tr>
+<tr><td>Medical + cosmetic under one roof</td><td>Yes, combined intelligently</td><td>Cosmetic only</td></tr>
+</table>
+<p class="review" style="display:block;max-width:64ch;">Dr. Higgins: confirm this comparison is accurate and defensible, and that our device-range claim is verifiable.</p>
+</section>
+<section class="block">
+<span class="bnum">07 · Real results</span>
+<h2>Results on real Metropolis patients</h2>
+<p>Before-and-after images of our own skin-of-color patients, never stock, shown with documented consent.</p>
+<div class="proof">
+<div class="ba"><span>Before / after · consented patient</span></div>
+<div class="ba"><span>Before / after · consented patient</span></div>
+</div>
+<p class="review" style="display:block;">Add only consented, unedited before/afters that clear FTC + California medical-board imagery rules. SEO filenames + descriptive alt, no PHI.</p>
+</section>
+<section class="block">
+<span class="bnum">08 · Your provider</span>
+<h2>Care led by a dermatologist who specializes in this</h2>
+<div class="byline-card">
+<div class="pic"><span>Portrait</span></div>
+<div>
+<h3>Dr. Shauna Higgins</h3>
+<div class="role">Clinical Director · Skin of color</div>
+<p class="cred">Board-certified dermatologist, sought out for culturally-informed, expert care of deeper skin. <span class="review">Full bio + byline pending medical sign-off.</span></p>
+</div>
+</div>
+</section>
+<section class="block" id="faq">
+<span class="bnum">FAQ</span>
+<h2>Common questions</h2>
+<div class="faq">
+<details><summary>Is laser hair removal safe on dark skin?</summary><p>It can be, with the right device. <span class="review">Dr. Higgins: confirm which wavelengths/devices we use for deeper skin and the safe-candidacy criteria.</span></p></details>
+<details><summary>How do you treat melasma on skin of color?</summary><p><span class="review">Dr. Higgins: provide the approach in plain language (topicals, gentle procedures, sun protection), no outcome guarantees.</span></p></details>
+<details><summary>Can chemical peels cause dark spots on darker skin?</summary><p><span class="review">Dr. Higgins: confirm the honest answer and how Metropolis mitigates the risk.</span></p></details>
+<details><summary>Do you treat keloids?</summary><p><span class="review">Dr. Higgins: confirm treatments offered and expectations.</span></p></details>
+</div>
+</section>
+</div>
+<aside class="rail" id="consult">
+<div class="rail-card">
+<p class="eyebrow">Start with a conversation</p>
+<h3>See a dermatologist who knows your skin.</h3>
+<p>Tell us what brings you in. We will match you with the right provider at your nearest location.</p>
+<a class="btn block on" href="#">Request a consultation</a>
+<p class="fine">Most medical visits accept insurance. Five California locations.</p>
+</div>
+<div class="rail-related">
+<p class="eyebrow">Related concerns</p>
+<ul>
+<li><a href="#">Melasma <span class="ar">→</span></a></li>
+<li><a href="#">Hyperpigmentation &amp; dark marks <span class="ar">→</span></a></li>
+<li><a href="#">Keloid &amp; raised scars <span class="ar">→</span></a></li>
+<li><a href="#">Acne &amp; acne scars <span class="ar">→</span></a></li>
+<li><a href="#">Skin cancer screening <span class="ar">→</span></a></li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+<footer>
+<div class="wrap foot-in">
+<a class="mark" href="#" style="text-decoration:none;">Metropolis<small>Dermatology</small></a>
+<p>Downtown LA · Brentwood · Pasadena · San Jose · Costa Mesa</p>
+<p>© 2026 Metropolis Dermatology</p>
+</div>
+<div class="wrap"><div aria-hidden="true" class="whisper" style="margin-top:2rem;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+</footer>
+<section class="notes">
+<div class="wrap">
+<p class="eyebrow on-dark">Studio notes · internal · service page draft</p>
+<h2>How this page is built</h2>
+<p style="max-width:62ch;color:#BCAF9F;margin-top:.8rem;">The Layer-2 moat page, on the /seo 8-block Service Page Standard, in the v3 visual language. It is a DRAFT: every ⚑ mark is a claim Dr. Higgins must confirm before publish.</p>
+<div class="grid">
+<div class="n"><h4>The 8 blocks</h4><p>Definition · why-it's-different (the Information Gain competitors skip) · candidate · caution/contraindications · risks · how-we-compare · first-party proof · bylined provider. Intent-matched to real skin-of-color search.</p><p class="src">[seo 8-block]</p></div>
+<div class="n"><h4>YMYL discipline, visible</h4><p>Clinical specifics are bracketed inline (⚑) and batched to Dr. Higgins, not asserted. The page keeps drafting around the gaps. Nothing medical publishes without her sign-off.</p><p class="src">[seo medical-review SLA]</p></div>
+<div class="n"><h4>Moat made indexable</h4><p>Real headings and prose carrying melasma, hyperpigmentation/PIH, keloids, Fitzpatrick IV–VI; a compare table; an FAQ with FAQPage schema; MedicalWebPage + reviewedBy Physician schema.</p><p class="src">[seo Layer 2]</p></div>
+<div class="n"><h4>Conversion + cluster</h4><p>Sticky consult rail (value-routed), breadcrumb, and a related-concerns block that links the moat cluster (melasma, PIH, keloids, acne, screening) so authority compounds.</p><p class="src">[practice-growth + seo internal links]</p></div>
+<div class="n"><h4>Compliance in the copy</h4><p>"Individual results vary," "educational, not medical advice," honest med-spa comparison (category patterns, no named competitor), before/afters gated to consented + board-safe imagery.</p><p class="src">[FTC + CA board]</p></div>
+<div class="n"><h4>Same v3 feel</h4><p>Warm greige, espresso ink, clay whisper, editorial serif, hairlines. Accessible-luxury on the surface, moat underneath.</p><p class="src">[brief Layer 1]</p></div>
+</div>
+<p class="gate"><b style="color:#D9B79B;">Before publish:</b> Dr. Higgins clears every ⚑ · add consented before/afters (SEO filenames + alt) · confirm the device-range claim is verifiable · add streetAddress/phone to schema · full &lt;head&gt; metadata in the Elementor build.</p>
+</div>
+</section>
+</body>
+</html>
