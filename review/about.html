@@ -26,8 +26,8 @@
   .lede{font-size:clamp(1.06rem,1rem + .5vw,1.28rem);line-height:1.6;color:var(--ink-soft);}
   .review{background:var(--review-bg);border-bottom:1px dashed var(--review-line);color:var(--clay-deep);font-size:.9em;padding:0 .25em;border-radius:2px;}
   .review::before{content:"⚑ ";font-size:.85em;}
-  .internal{display:none;} body.notes .internal{display:revert;}
-  .review{display:none;} body.notes .review{display:inline;}
+  .internal{display:none;} body.shownotes .internal{display:revert;}
+  .review{display:none;} body.shownotes .review{display:inline;}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-weight:600;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;padding:1rem 1.6rem;border:1px solid var(--ink);min-height:52px;background:var(--ink);color:var(--paper);text-decoration:none;transition:background .2s,color .2s;}
   .btn:hover{background:transparent;color:var(--ink);}
   .btn.on-dark{background:#F1EDE5;color:#211A15;border-color:#F1EDE5;}
@@ -127,8 +127,9 @@
   "sameAs":["https://www.jameswangdermatology.com/"]
 }
 </script>
+<style>body.shownotes .internal{display:revert !important;}body.shownotes .review{display:revert !important;}</style>
 </head>
-<body class="notes">
+<body class="shownotes">
 <div style="background:#8A4A2E;color:#F6ECE6;font-family:ui-sans-serif,-apple-system,Arial,sans-serif;padding:.75rem 1.25rem;font-size:.86rem;line-height:1.4;text-align:center;"><b>REVIEW COPY</b> · highlighted ⚑ items are notes and questions for your input. Please send feedback to Rick. · <a href="./" style="color:#F6ECE6;">All pages</a></div>
 <header class="nav"><div class="wrap nav-in">
 <a class="mark" href="/">Metropolis<small>Dermatology</small></a>

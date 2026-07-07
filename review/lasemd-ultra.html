@@ -119,9 +119,9 @@
   .inote p{margin:0;font-size:.9rem;color:#33413F;}
   /* PUBLISH-SAFE DEFAULT: internal layer hidden unless reviewer opts in */
   .internal{display:none;}
-  body.notes .internal{display:revert;}
+  body.shownotes .internal{display:revert;}
   .review{display:none;}
-  body.notes .review{display:inline;}
+  body.shownotes .review{display:inline;}
   /* by-location provider block */
   .locblock{background:var(--paper-2);border-top:1px solid var(--line);}
   .locblock .wrap{padding:clamp(3rem,6vw,5rem) clamp(1.25rem,4vw,2.75rem);}
@@ -168,8 +168,9 @@
   "isPartOf":{"@type":"MedicalClinic","name":"Metropolis Dermatology","url":"https://metropolisdermatology.com/"}
 }
 </script>
+<style>body.shownotes .internal{display:revert !important;}body.shownotes .review{display:revert !important;}</style>
 </head>
-<body class="notes">
+<body class="shownotes">
 <div style="background:#8A4A2E;color:#F6ECE6;font-family:ui-sans-serif,-apple-system,Arial,sans-serif;padding:.75rem 1.25rem;font-size:.86rem;line-height:1.4;text-align:center;"><b>REVIEW COPY</b> · highlighted ⚑ items are notes and questions for your input. Please send feedback to Rick. · <a href="./" style="color:#F6ECE6;">All pages</a></div>
 <header class="nav"><div class="wrap nav-in">
 <a class="mark" href="#">Metropolis<small>Dermatology</small></a>
