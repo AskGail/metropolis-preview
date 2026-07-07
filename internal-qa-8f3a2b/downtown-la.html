@@ -166,14 +166,14 @@
 </script>
 </head>
 <body class="shownotes">
-<div style="background:#8A4A2E;color:#F6ECE6;font-family:ui-sans-serif,-apple-system,"Helvetica Neue",Arial,sans-serif;padding:.8rem 1.25rem;font-size:.86rem;line-height:1.45;text-align:center;"><b>REVIEW DRAFT</b> &middot; The highlighted &#9873; notes are questions for you. These are design and copy comps; photography is placeholder. Please send any changes to Rick and your Tier3 team. &middot; <a href="./" style="color:#F6ECE6;text-decoration:underline;">All pages</a> &middot; <a href="../" style="color:#F6ECE6;text-decoration:underline;">View without notes</a></div><header class="nav"><div class="wrap nav-in">
+<div style="background:#211A15;color:#E8E3D9;font-family:ui-sans-serif,-apple-system,"Helvetica Neue",Arial,sans-serif;padding:.8rem 1.25rem;font-size:.86rem;line-height:1.45;text-align:center;"><b>INTERNAL &middot; QA</b> &middot; Full build logic + strategy + client questions shown. NOT for client distribution. &middot; <a href="./" style="color:#E8E3D9;text-decoration:underline;">All pages</a></div><header class="nav"><div class="wrap nav-in">
 <a class="mark" href="#">Metropolis<small>Dermatology</small></a>
 <a class="nav-cta" href="#book">Talk to a dermatologist</a>
 </div></header>
 <nav aria-label="Breadcrumb" class="wrap"><div class="crumb-in"><a href="/">Home</a><span>/</span><a href="/locations/">Locations</a><span>/</span><span>Downtown LA</span></div></nav>
 <section class="hero">
 <div aria-label="The Metropolis Dermatology Downtown LA flagship interior." class="photo" role="img"></div>
-
+<span class="plabel">Full-bleed photography · DTLA flagship interior</span>
 <div class="wrap hero-in">
 <p class="flag">Our flagship · Downtown Los Angeles</p>
 <h1>The office Metropolis started in.</h1>
@@ -220,7 +220,7 @@
 <div class="pcard"><div class="av"></div><div class="nm">Dr. Maryam Safaee, MD</div><div class="cr">Board-certified dermatologist</div><div class="ln">Medical derm; hair &amp; scalp</div><a href="/providers/maryam-safaee/">Read bio</a></div>
 <div class="pcard"><div class="av"></div><div class="nm">Stephen Baccari, NP-C</div><div class="cr">Dermatology nurse practitioner</div><a href="/providers/stephen-baccari/">Read bio</a></div>
 </div>
-
+<div class="inote internal"><span class="lbl">◾ Internal · verify before publish</span><p>Live copy now reads NON-ASSERTING ("includes providers such as…") because both providers publish under BOTH DTLA and Brentwood (template-shared, per the fact desk), so the DTLA schedule is unconfirmed. Confirm the true DTLA roster + the skin-of-color lead with the client, then name them plainly. Bio links point to author pages once built.</p></div>
 </section>
 <section>
 <p class="eyebrow">What we treat</p>
@@ -250,7 +250,14 @@
 <a class="maplink" href="https://www.google.com/maps/dir/?api=1&amp;destination=888+S+Figueroa+St+Suite+1050+Los+Angeles+CA+90017" rel="noopener" target="_blank">⚲ Get directions to 888 S Figueroa St</a>
 <p class="review" style="display:block;margin-top:1rem;">Please confirm from your Google Business Profile or your team: office hours, parking and validation (a common patient question for Downtown LA), the nearest Metro stop, and accessibility. Booking runs through Klara.</p>
 </section>
-
+<section>
+<p class="eyebrow">What patients say</p>
+<h2>Reviews</h2>
+<div class="reviews">
+<div class="stars"><span class="review">Current rating, to confirm from your Google Business Profile.</span></div>
+<p style="font-size:.9rem;color:var(--ink-soft);margin:.5rem 0 0;">Pull the current Google rating + count from this location's Google Business Profile (same-day capture, "as of" date), and add a few consented review excerpts (FTC-compliant, no gating or incentives, CA-board consent for testimonials). Never render an unverified number.</p>
+</div>
+</section>
 </div>
 <aside class="rail">
 <div class="rail-card">
@@ -291,5 +298,18 @@
 <a class="mark" href="#" style="text-decoration:none;">Metropolis<small>Dermatology</small></a>
 <p>Downtown LA · Brentwood · Pasadena · San Jose · Costa Mesa</p><p>© 2026 Metropolis Dermatology</p>
 </div></footer>
+<section class="notes"><div class="wrap">
+<p class="eyebrow on-dark">Studio notes · internal · location page (D3, v2 post-board)</p>
+<h2>What the board changed</h2>
+<div class="grid">
+<div class="n"><h4>The two differentiators, built</h4><p>Flagship story now leads ("Dr. Wang designed this office," its own passage) and the inclusive-care moat is a dedicated provider-fronted section with real skin-of-color intent (melasma/hyperpigmentation/keloids), qualified per YMYL. Format, not prose-dump.</p><p class="src">luxury + copychief + seo</p></div>
+<div class="n"><h4>Conversion wired</h4><p>Mobile bar is now a Call + Book split (near-me traffic calls); the map and quick-bar are tappable to directions; the form is staged for Klara. Friction removal, no urgency.</p><p class="src">practice-growth + pagewright</p></div>
+<div class="n"><h4>Hedge moved into live copy</h4><p>Providers and services now read NON-ASSERTING in the live layer ("includes providers such as…," "treatments we offer…"), not hedged only in a hidden note. New doctrine rule.</p><p class="src">verify-source</p></div>
+<div class="n"><h4>Schema fixed + completed</h4><p>URL corrected to /downtown-location/; MedicalClinic + LocalBusiness multi-type; sameAs + image + hasMap + enumerated neighborhood areaServed added; geo/hours/rating stay GBP-gated. Real `<head>` title.</head></p><p class="src">seo + verify-source</p></div>
+<div class="n"><h4>Services + CTAs reworked</h4><p>Grouped Medical / Cosmetic (the "we do both" moat), 48px chips, links wired to real URLs, LaseMD-at-DTLA removed. Quick-bar cells are now distinct actions (Call, Directions), not a sixth "Book."</p><p class="src">luxury + pagewright + copychief</p></div>
+<div class="n"><h4>Kept (board-confirmed correct)</h4><p>Publish-safe clean default, verified NAP, GBP-gating, de-risk (team leads, Wang as designer), qualified moat. The method held.</p><p class="src">all six</p></div>
+</div>
+<p class="gate"><b style="color:#D9B79B;">Before publish:</b> confirm DTLA roster + skin-of-color lead + services offered · GBP capture for hours + rating (with "as of") · confirm phone vs GBP · wire form to Klara · geo/hours in schema · real flagship + provider photography (SEO filenames + alt) · confirm the founder-designed-space detail.</p>
+</div></section>
 </body>
 </html>
