@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Melasma on Skin of Color: How It Is Treated, Safely | Metropolis Dermatology</title>
+<title>Melasma on Skin of Color: How Dermatologists Treat It Carefully | Metropolis Dermatology</title>
 <style>
   :root{
     --paper:#E8E3D9;--paper-2:#E1DBCF;--card:#F1EDE5;
@@ -152,18 +152,43 @@
   body.shownotes .internal b{color:#0f2b29;}
   .video{position:relative;aspect-ratio:16/9;border-radius:4px;overflow:hidden;margin:1.3rem 0;max-width:64ch;
     background:linear-gradient(135deg,#2b2118,#4a3223 55%,#6d4a30);border:1px solid var(--line);}
-  .video .vlabel{position:absolute;inset:auto 0 0 0;padding:1rem 1.2rem;color:#EDE2D2;font-size:.82rem;
-    background:linear-gradient(0deg,rgba(20,15,11,.78),transparent);}
-  .video .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;
-    background:rgba(246,241,232,.92);display:flex;align-items:center;justify-content:center;}
+  .video .vlabel{position:absolute;inset:auto 0 0 0;padding:1rem 1.2rem;color:#EDE2D2;font-size:.82rem;background:linear-gradient(0deg,rgba(20,15,11,.78),transparent);}
+  .video .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(246,241,232,.92);display:flex;align-items:center;justify-content:center;}
   .video .play::after{content:"";border-left:18px solid var(--ink);border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px;}
   .clusters{list-style:none;padding:0;margin:1rem 0 0;max-width:64ch;}
-  .clusters li{border-top:1px solid var(--line);}
-  .clusters li:first-child{border-top:0;}
+  .clusters li{border-top:1px solid var(--line);} .clusters li:first-child{border-top:0;}
   .clusters a{display:flex;justify-content:space-between;gap:1rem;align-items:center;padding:.8rem 0;min-height:48px;color:var(--ink);text-decoration:none;font-size:.96rem;}
   .clusters a:hover{color:var(--clay);} .clusters .ar{color:var(--clay);}
   .keytake{background:var(--card);border:1px solid var(--line);border-left:2px solid var(--clay);border-radius:2px;padding:1.2rem 1.4rem;margin:1.4rem 0;max-width:64ch;}
   .keytake .eyebrow{margin-bottom:.5rem;display:block;}
+  .content a.ilink{color:var(--clay-deep);border-bottom:1px solid var(--review-line);}
+  .content a.ilink:hover{color:var(--clay);}
+  /* mid-page + mobile CTA: touchpoint economics on a long pillar */
+  .midcta{display:flex;gap:1rem 1.4rem;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--paper-2);border:1px solid var(--line);border-radius:4px;padding:1.15rem 1.4rem;margin:1.6rem 0;max-width:64ch;}
+  .midcta p{margin:0;font-size:.98rem;color:var(--ink-soft);max-width:38ch;}
+  .midcta a.textlink{border-color:var(--clay);white-space:nowrap;}
+  .mcta{display:none;}
+  @media(max-width:920px){
+    .mcta{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:40;align-items:center;background:#211A15;padding:.6rem .8rem;border-top:1px solid #3a2c22;box-shadow:0 -6px 20px rgba(0,0,0,.18);}
+    .mcta a{flex:1;text-align:center;background:#F1EDE5;color:#211A15;border:1px solid #F1EDE5;font-family:var(--sans);font-weight:700;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;padding:.8rem 1rem;border-radius:2px;text-decoration:none;min-height:48px;display:flex;align-items:center;justify-content:center;}
+    body{padding-bottom:72px;}
+  }
+  /* compare table: scroll floor + stacked cards on small screens */
+  .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  @media(max-width:560px){
+    .compare thead{display:none;}
+    .compare,.compare tbody,.compare tr,.compare td{display:block;width:auto;}
+    .compare tr{border:1px solid var(--line);border-radius:3px;margin-bottom:.9rem;padding:.55rem .3rem;}
+    .compare td{border:0;padding:.28rem .9rem;}
+    .compare td:first-child{width:auto;font-size:1.05rem;color:var(--clay-deep);font-weight:600;}
+    .compare td[data-l]::before{content:attr(data-l);display:block;font-size:.58rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;margin:.45rem 0 .1rem;}
+  }
+  .faq summary{min-height:48px;align-items:center;}
+  .localmod{max-width:64ch;margin-top:1rem;}
+  .localmod .loc{display:flex;gap:.9rem;padding:.75rem 0;border-top:1px solid var(--line);font-size:.95rem;}
+  .localmod .loc:first-child{border-top:0;}
+  .localmod .loc b{min-width:130px;flex:none;color:var(--ink);}
+  .localmod .loc span{color:var(--ink-soft);}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -171,7 +196,6 @@
   "url":"https://metropolisdermatology.com/melasma-skin-of-color/",
   "about":[{"@type":"MedicalCondition","name":"Melasma"},{"@type":"MedicalCondition","name":"Hyperpigmentation"},{"@type":"MedicalCondition","name":"Post-inflammatory hyperpigmentation"}],
   "audience":{"@type":"PeopleAudience","description":"Patients with Fitzpatrick skin types III to VI"},
-  "reviewedBy":{"@type":"Physician","name":"Dr. Shauna Higgins","medicalSpecialty":"Dermatology"},
   "isPartOf":{"@type":"MedicalClinic","name":"Metropolis Dermatology","url":"https://metropolisdermatology.com/"}},
  {"@type":"BreadcrumbList","itemListElement":[
    {"@type":"ListItem","position":1,"name":"Home","item":"https://metropolisdermatology.com/"},
@@ -184,7 +208,7 @@
 <div style="background:#8A4A2E;color:#F6ECE6;font-family:ui-sans-serif,-apple-system,"Helvetica Neue",Arial,sans-serif;padding:.8rem 1.25rem;font-size:.86rem;line-height:1.45;text-align:center;"><b>REVIEW DRAFT</b> &middot; The highlighted &#9873; notes are questions for you. These are design and copy comps; photography is placeholder. Please send any changes to Rick and your Tier3 team. &middot; <a href="./" style="color:#F6ECE6;text-decoration:underline;">All pages</a> &middot; <a href="../" style="color:#F6ECE6;text-decoration:underline;">View without notes</a></div><header class="nav">
 <div class="wrap nav-in">
 <a class="mark" href="#">Metropolis<small>Dermatology</small></a>
-<a class="nav-cta" href="#consult">Talk to a dermatologist</a>
+<a class="nav-cta" href="#book">Talk to a dermatologist</a>
 </div>
 </header>
 <nav aria-label="Breadcrumb" class="crumb">
@@ -197,13 +221,13 @@
 
 <div class="wrap hero-in">
 <p class="eyebrow on-dark">Skin of color · Pigmentation</p>
-<h1>Melasma on skin of color: how it is treated, safely.</h1>
+<h1>Melasma on skin of color: how our dermatologists treat it, carefully.</h1>
 <p class="lede">Melasma is more common, and more stubborn, on deeper skin. It is also where the wrong treatment does the most harm. This is how our dermatologists approach it, and why the plan looks different when the goal is to clear the pigment without triggering more.</p>
 <div class="row">
-<a class="btn on-dark" href="#consult" style="background:#F1EDE5;color:#211A15;border-color:#F1EDE5;">Talk to a dermatologist</a>
-<a class="textlink" href="#faq" style="color:#EBD3BB;border-color:#EBD3BB;">Common questions</a>
+<a class="btn on-dark" href="#book" style="background:#F1EDE5;color:#211A15;border-color:#F1EDE5;">Talk to a dermatologist</a>
+<a class="textlink" href="#treatment" style="color:#EBD3BB;border-color:#EBD3BB;">How we treat it →</a>
 </div>
-<p class="byline">Medically reviewed by <strong>Dr. Shauna Higgins</strong>, board-certified dermatologist <span class="review">pending sign-off. Dr. Higgins is our skin-of-color lane lead; her named review is the E-E-A-T author credit and the YMYL gate. Confirm she is the reviewer before her byline goes live.</span></p>
+<p class="byline">Clinical review lead: <strong>Dr. Shauna Higgins</strong>, board-certified dermatologist <span class="review">Non-asserting until sign-off. At sign-off this line becomes "Medically reviewed by Dr. Higgins," and the reviewedBy + dateReviewed schema and the FAQPage block are all added in one publish step. Dr. Higgins is our skin-of-color lane lead; her named review is the E-E-A-T author credit and the YMYL gate.</span></p>
 </div>
 </section>
 <div class="wrap">
@@ -212,127 +236,148 @@
 <section class="block">
 <span class="bnum">01 · What it is</span>
 <h2>What melasma is, and why deeper skin sees more of it</h2>
-<p>Melasma is a common form of pigmentation. It shows up as symmetrical patches of brown or grey-brown, usually on the cheeks, forehead, upper lip, and bridge of the nose, the areas that catch the most light. It is driven by pigment-producing cells, called melanocytes, that become overactive and deposit extra melanin.</p>
-<p>On skin of color, those melanocytes are already larger and more active by nature. That is what gives deeper skin its richness, and it is also why melasma appears more often, spreads more readily, and holds on longer here than it does on the lightest skin. The same biology that protects deeper skin from the sun is the biology that, once provoked, makes pigment harder to settle back down.</p>
-<div class="keytake"><span class="eyebrow">The short version</span><p>Melasma is not a stain on the surface you can scrub away. It is overactive pigment cells responding to triggers, so the real work is calming the trigger and the cell, not attacking the skin.</p></div>
-<p>Two things follow from that, and they shape everything below. First, melasma is treatable but not, in the honest sense, curable. It is controlled and maintained, the way you would manage any tendency the skin keeps. Second, on deeper skin the margin for error is thin: the aggressive treatments that clear pigment fastest on light skin are the same ones most likely to leave a darker mark behind. Restraint is not caution here. It is the technique.</p>
+<p>If you are reading this, there is a fair chance you have already tried to treat this yourself. A product, maybe several. Maybe a treatment somewhere that did not hold, or left you with more pigment than you started with. That is the common story with melasma on deeper skin, and it is not a failure on your part. Melasma punishes the wrong approach, which is exactly why the right one starts with understanding what it actually is.</p>
+<p>Melasma shows up as symmetrical patches of brown or grey-brown, usually on the cheeks, forehead, upper lip, and bridge of the nose, the areas that catch the most light. It is centered on pigment-producing cells, called melanocytes, that deposit extra melanin, but it is better understood as a whole-skin response: sunlight, hormones, heat, and inflammation all feed those cells and keep them switched on. That is why it behaves less like a stain on the surface and more like a sensitivity the skin holds onto.</p>
+<p>On skin of color those cells are already more active by nature. That is what gives deeper skin its richness, and it is also why melasma appears more often here, and holds on longer, than it does on the lightest skin. The same biology that protects deeper skin from the sun is the biology that, once provoked, makes pigment harder to settle back down.</p>
+<div class="keytake"><span class="eyebrow">The short version</span><p>Melasma is not a stain you can scrub away. It is overactive pigment responding to triggers, so the real work is calming the trigger and the cell, not attacking the skin.</p></div>
+<p>Two things follow, and they shape everything below. First, melasma is treatable but not, in the honest sense, curable. It is controlled and maintained, the way you would manage any tendency the skin keeps. Second, on deeper skin the margin for error is thin: the aggressive treatments that clear pigment fastest on light skin are the same ones most likely to leave a darker mark behind. Restraint is not the cautious option here. It is the technique.</p>
 
 </section>
 <section class="block">
 <span class="bnum">02 · Getting the diagnosis right</span>
 <h2>Melasma, or something that looks like it</h2>
-<p>The most important step happens before any treatment, and it is the one most often skipped: making sure the pigment is actually melasma. On deeper skin, several things look alike to the eye and respond very differently to treatment.</p>
+<p>The most important step happens before any treatment, and it is the one most often skipped: making sure the pigment is actually melasma. On deeper skin several things look alike to the eye and behave very differently.</p>
 <ul>
-<li><strong>Post-inflammatory hyperpigmentation (PIH)</strong> is pigment left behind by a prior insult, a breakout, a scratch, a cosmetic procedure that was too aggressive. It is extremely common on skin of color, and it responds to a different, gentler plan than melasma. Treating melasma with something that inflames the skin can create PIH on top of it, which is how people end up worse than they started.</li>
-<li><strong>Where the pigment sits</strong> matters. Melasma can be mostly in the upper layers of the skin, mostly deeper down, or a mix of both. Deeper pigment is more resistant, and pretending otherwise sets a false expectation. A dermatologist can read this at the visit, sometimes with a simple Wood's lamp, and it changes the plan.</li>
-<li><strong>Other pigment conditions</strong>, from lichen planus pigmentosus to a drug-related pigmentation, can mimic melasma and need a different route entirely. This is precisely the kind of distinction a board-certified dermatologist is trained to make, and a walk-in aesthetic menu is not.</li>
+<li><strong>Post-inflammatory hyperpigmentation (PIH)</strong> is pigment left behind by a prior insult, a breakout, a scratch, a cosmetic procedure that was too aggressive. It is extremely common on skin of color, and it responds to a different, gentler approach than melasma. Treating melasma with something that inflames the skin can create PIH on top of it, which is how people end up worse than they started. <a class="ilink" href="#">How to tell melasma and PIH apart →</a></li>
+<li><strong>Where the pigment sits</strong> matters. Melasma can be mostly in the upper layers of the skin, mostly deeper down, or a mix of both. Deeper pigment is more resistant to topical treatment, and pretending otherwise sets a false expectation. A dermatologist can read this at the visit, sometimes with a simple Wood's lamp, and it changes what we recommend.</li>
+<li><strong>Other pigment conditions</strong>, from lichen planus pigmentosus to a medication-related pigmentation, can mimic melasma and need a different route entirely. This is exactly the distinction a board-certified dermatologist is trained to make, and a walk-in aesthetic menu is not.</li>
 </ul>
 <p>This is the first place experience earns its keep. Get the diagnosis wrong on deeper skin and the treatment does not just fail, it can add a second problem to the one you came in with.</p>
-<p class="review">Dr. Higgins: confirm how you differentiate melasma from PIH and other pigment conditions at the visit (Wood's lamp, dermoscopy, biopsy in unclear cases), and correct any wording here.</p>
+<p class="review">Dr. Higgins: confirm how you differentiate melasma from PIH and other pigment conditions at the visit (Wood's lamp, dermoscopy, biopsy in unclear cases), and note the honest limitation that a Wood's lamp does not fully predict treatment response. Correct any wording.</p>
 </section>
 <section class="block">
 <span class="bnum">03 · What sets it off</span>
 <h2>The triggers, and the one most people miss</h2>
-<p>Melasma is a response, so controlling it starts with the things that provoke it. The usual suspects are real: ultraviolet sun exposure, hormones (pregnancy, birth control, and hormone therapy are common starting points), and heat. But the trigger most people, and a surprising number of products, miss is <strong>visible light</strong>, the ordinary light from the sky, a window, and screens.</p>
-<p>This is the detail that changes outcomes on skin of color. Visible light drives pigment more strongly in deeper skin than in lighter skin, and a standard clear sunscreen does very little against it. That single fact reshapes the foundation of any real melasma plan, which is why it leads the treatment section rather than being an afterthought.</p>
-<div class="keytake"><span class="eyebrow">Why it keeps coming back</span><p>If the light exposure driving the pigment is never addressed, every treatment underneath it is working against a tap that is still running. Protection is not the boring part of the plan. It is the part that makes the rest hold.</p></div>
+<p>Melasma is a response, so controlling it starts with the things that provoke it. The usual triggers are real: ultraviolet sun exposure, hormones (pregnancy, birth control, and hormone therapy are common starting points), and heat. But the trigger most people, and a surprising number of products, miss is <strong>visible light</strong>, the ordinary light from the sky, a window, and screens.</p>
+<p>This is the detail that changes outcomes on skin of color. Visible light drives pigment more strongly in deeper skin than in lighter skin, and a standard clear sunscreen does very little against it. That single fact reshapes the foundation of any real melasma plan, which is why it leads the treatment section rather than sitting as an afterthought.</p>
+<div class="keytake"><span class="eyebrow">Why it keeps coming back</span><p>If the light exposure driving the pigment is never addressed, every treatment underneath it is working against a tap that is still running. Protection is not the boring part. It is the part that makes the rest hold.</p></div>
 </section>
-<section class="block">
+<section class="block" id="treatment">
 <span class="bnum">04 · Treatment</span>
 <h2>The treatment ladder, built for deeper skin</h2>
-<p>There is no single melasma treatment, there is a sequence, and on skin of color the order matters as much as the ingredients. We build from the gentlest, most protective layer up, and we add intensity only when it is earned and only when the skin has shown it can take it. Here is how that ladder is built.</p>
-<h3>Foundation: protection you can actually see working</h3>
-<p>Every plan starts here, and skipping it is why so many melasma treatments quietly fail. On deeper skin that means broad-spectrum sun protection that also blocks visible light, which in practice means a <strong>tinted sunscreen with iron oxides</strong>. The tint is not cosmetic, it is the active defense against the visible light that drives pigment in skin of color, and a clear sunscreen does not provide it. Worn daily, reapplied, and paired with shade and a hat where it counts, this is the layer the entire rest of the plan rests on.</p>
+<p>There is no single melasma treatment. There is a sequence, and on skin of color the order matters as much as the ingredients. We build from the gentlest, most protective layer up, and add intensity only when it is earned and only when the skin has shown it can take it.</p>
+<h3>Foundation: protection you can see working</h3>
+<p>Every plan starts here, and skipping it is why so many melasma treatments quietly fail. On deeper skin that means broad-spectrum sun protection that also blocks visible light, which in practice means a <strong>tinted sunscreen with iron oxides</strong>. The tint is not cosmetic. It is the active defense against the visible light that drives pigment in skin of color, and a clear sunscreen does not provide it. Worn daily, reapplied, and paired with shade and a hat where it counts, this is the layer the rest of the plan rests on. <a class="ilink" href="#">Why tinted sunscreen matters for deeper skin tones →</a></p>
 <h3>Topicals: the workhorses</h3>
-<p>Most melasma is managed, first and for the long term, with topical treatment. These are the tools our dermatologists reach for, each chosen for the skin in front of them rather than prescribed off a template.</p>
+<p>Most melasma is managed, first and for the long term, with topical treatment. These are the tools our dermatologists reach for, each chosen for the skin in front of them rather than off a template.</p>
+<div class="tablewrap">
 <table class="compare">
 <thead><tr><th>Approach</th><th>What it does</th><th>The skin-of-color note</th></tr></thead>
 <tbody>
-<tr><td>Hydroquinone</td><td>The long-standing standard for lightening overactive pigment, usually for a defined stretch rather than indefinitely.</td><td>Effective, but used in courses and under supervision on deeper skin, long unmonitored use carries a real risk of its own pigment problem (ochronosis). This is a prescription decision, not a shelf product.</td></tr>
-<tr><td>Tranexamic acid</td><td>Calms the signal that tells pigment cells to overproduce. Available topically, and by mouth in selected cases.</td><td>A meaningful advance for stubborn melasma. Oral use requires medical screening first, it is not appropriate for everyone, and it is prescribed and monitored, never casual.</td></tr>
-<tr><td>Azelaic acid</td><td>Lifts pigment and calms inflammation at once, gentle enough for long-term use.</td><td>Well tolerated on deeper skin and safe in pregnancy, which makes it a frequent first move when hormones are in play.</td></tr>
-<tr><td>Cysteamine, kojic acid, niacinamide</td><td>Non-hydroquinone pigment tools, often layered in or used to maintain results.</td><td>Useful for keeping skin clear between stronger courses, and for those who cannot use hydroquinone.</td></tr>
-<tr><td>Retinoids</td><td>Speed cell turnover and help other actives work.</td><td>Introduced slowly on deeper skin, because too much irritation is itself a trigger for the very pigment we are treating.</td></tr>
+<tr><td>Hydroquinone</td><td data-l="What it does">The long-standing standard for lightening overactive pigment, used for a defined stretch rather than indefinitely.</td><td data-l="On deeper skin">Effective, but used in courses and under supervision. On deeper skin, long or unmonitored use, even at lower strengths, risks a pigment problem of its own (ochronosis). This is a prescription decision, not a shelf product.</td></tr>
+<tr><td>Tranexamic acid</td><td data-l="What it does">Calms the signal that tells pigment cells to overproduce. Available topically, and by mouth in selected cases.</td><td data-l="On deeper skin">A meaningful option for stubborn melasma. Oral use requires medical screening first, it is not appropriate for everyone, and it is prescribed and monitored, never casual. <a class="ilink" href="#">Oral tranexamic acid: who it is for →</a></td></tr>
+<tr><td>Azelaic acid</td><td data-l="What it does">Lifts pigment and calms inflammation at once, gentle enough for long-term use.</td><td data-l="On deeper skin">Well tolerated on deeper skin and generally considered appropriate in pregnancy, which makes it a frequent first move when hormones are in play.</td></tr>
+<tr><td>Cysteamine, kojic acid, niacinamide</td><td data-l="What it does">Non-hydroquinone pigment tools, often layered in or used to hold results.</td><td data-l="On deeper skin">Useful for keeping skin clear between stronger courses, and for those who cannot use hydroquinone.</td></tr>
+<tr><td>Retinoids</td><td data-l="What it does">Speed cell turnover and help other actives work.</td><td data-l="On deeper skin">Introduced slowly, because too much irritation is itself a trigger for the very pigment we are treating.</td></tr>
 </tbody>
 </table>
-<p class="review">Dr. Higgins: confirm this ladder reflects how you actually treat, your first-line combination, whether you use compounded formulas or a triple-combination cream, your oral tranexamic acid screening and contraindications, and anything to add or cut.</p>
+</div>
+<p class="review">Dr. Higgins: confirm this reflects how you actually treat, your first-line combination, whether you use compounded formulas or a triple-combination cream, your oral tranexamic acid screening and contraindications, and anything to add or cut.</p>
 
 <h3>In-office, done carefully</h3>
 <p>Procedures can help, but this is where skin of color demands the most restraint, and where the wrong hands do the most damage. The rule our dermatologists work by is simple: never provoke more pigment than you resolve.</p>
 <ul>
-<li><strong>Chemical peels</strong>, chosen conservatively (the gentler acids, at controlled strengths), can lift surface pigment. The deeper, more aggressive peels that are routine on light skin are approached with real caution here, because they can trigger PIH.</li>
-<li><strong>Lasers and energy devices</strong> are used selectively and at low, careful settings, if at all. Some approaches, such as low-fluence laser toning, have a role in trained hands, but they also carry a risk of rebound pigment or patchy lightening on deeper skin, so they are never a first move and never a blunt one. Just as important is what we do <em>not</em> do: the aggressive resurfacing and broad light-based devices that are known to backfire on melasma in skin of color.</li>
+<li><strong>Chemical peels</strong>, chosen conservatively (the gentler acids at controlled strengths), can lift surface pigment. The deeper, more aggressive peels that are routine on light skin are approached with real caution here, because they can trigger PIH. <a class="ilink" href="#">Chemical peels on deeper skin, done safely →</a></li>
+<li><strong>Lasers and energy devices</strong> are used selectively and at low, careful settings, if at all. Some approaches, such as low-fluence laser toning, have a role in trained hands, but they also carry a risk of rebound pigment or patchy lightening on deeper skin, so they are never a first move. Just as important is what we do <em>not</em> do: the aggressive resurfacing and broad light-based devices known to backfire on melasma in skin of color.</li>
 <li><strong>Microneedling</strong> is sometimes combined with topical pigment tools to help them penetrate, again at a measured pace.</li>
 </ul>
-<p class="review">Dr. Higgins: confirm exactly which in-office options Metropolis offers for melasma on deeper skin, the specific devices and settings you consider safe, and which you deliberately avoid. This is the block where naming the wrong device would be a real error, so it stays bracketed until you confirm.</p>
-<div class="keytake"><span class="eyebrow">The through-line</span><p>On skin of color, avoiding harm is half the skill. The dermatologist who knows which treatment <em>not</em> to reach for is protecting your result as much as the one they do reach for. That judgment is the difference between clearing melasma and chasing it.</p></div>
+<p class="review">Dr. Higgins: confirm exactly which in-office options Metropolis offers for melasma on deeper skin, the specific devices and settings you consider safe, and which you deliberately avoid. Naming the wrong device here would be a real error, so it stays bracketed until you confirm.</p>
+<div class="keytake"><span class="eyebrow">The through-line</span><p>On skin of color, avoiding harm is half the skill. The dermatologist who knows which treatment <em>not</em> to reach for is protecting your result as much as the one they do reach for.</p></div>
+<div class="midcta">
+<p>Not sure which of these is right for your skin? That is the whole point of the consult.</p>
+<a class="textlink" href="#book">Talk to a dermatologist →</a>
+</div>
 </section>
 <section class="block">
 <span class="bnum">05 · What to avoid</span>
 <h2>The mistakes that make melasma worse</h2>
-<p>Because the wrong treatment can add pigment rather than remove it, knowing what to avoid is as valuable as knowing what to try. On deeper skin, these are the ones that cause the most regret:</p>
+<p>Because the wrong treatment can add pigment rather than remove it, knowing what to avoid is as valuable as knowing what to try. On deeper skin, these cause the most regret:</p>
 <ul>
 <li><strong>Aggressive lasers and strong light-based treatments</strong> marketed as a fast fix. On melasma in skin of color, the fast fix is often the thing that leaves a lasting mark.</li>
 <li><strong>Unsupervised, open-ended hydroquinone</strong> from wherever it can be bought. It works when it is prescribed, timed, and monitored, and it causes its own problems when it is not.</li>
-<li><strong>Anything that inflames the skin</strong>, harsh scrubs, over-exfoliation, a too-strong peel from a non-medical setting. Inflammation is a pigment trigger, so irritation is not a sign it is working, it is a setback in progress.</li>
-<li><strong>Treating without a diagnosis.</strong> If no one confirmed it was melasma, the plan is a guess, and on deeper skin a guess is expensive.</li>
+<li><strong>Anything that inflames the skin</strong>, harsh scrubs, over-exfoliation, a too-strong peel from a non-medical setting. Inflammation is a trigger, so irritation is not a sign it is working, it is a setback in progress.</li>
+<li><strong>Treating without a diagnosis.</strong> If no one confirmed it was melasma, the treatment is a guess, and on deeper skin a guess can cost you the very thing you came in to fix.</li>
 </ul>
-<p>If a treatment promises to erase melasma in one session, that is the clearest signal to slow down. Melasma does not work that way, and on skin of color the shortcut is where the damage lives.</p>
+<p>If a treatment promises to erase melasma in one session, that is the clearest signal to slow down. Melasma does not work that way.</p>
 </section>
 <section class="block">
 <span class="bnum">06 · What to expect</span>
-<h2>An honest picture of results and upkeep</h2>
-<p>Melasma responds well to a patient, well-built plan, and it tends to return when the plan stops. That is not a failure of treatment, it is the nature of the condition, and hearing it up front is part of good care.</p>
-<p>Expect gradual progress measured over weeks and months, not days. Expect the foundation, the daily protection, to stay in place long after the pigment fades, because it is what keeps it faded. And expect the plan to flex, easing off the stronger tools once the skin is clear and holding it with gentler maintenance. Managed this way, melasma becomes something you keep quiet and controlled, on your terms, rather than something that flares and frustrates on its own.</p>
-<div class="keytake"><span class="eyebrow">The realistic goal</span><p>Not a single dramatic before-and-after, but clear, even skin that stays that way, because the plan protecting it never fully stops. That is a result you can keep.</p></div>
+<h2>An honest picture of results, cost, and upkeep</h2>
+<p>Melasma responds well to a patient, well-built approach, and it tends to return when that approach stops. This is not a failure of treatment, it is the nature of the condition, and hearing it up front is part of good care.</p>
+<p>Expect gradual progress measured over weeks and months, not days. Expect the foundation, the daily protection, to stay in place long after the pigment fades, because it is what keeps it faded.</p>
+<p>A word on cost, because most people arrive having already spent. On products that did not hold, sometimes on a treatment that made things worse. A correct plan is usually less than the trial and error it replaces, because it stops the cycle of paying to guess. We will be straight with you about what care involves before you commit to any of it.</p>
+<p>And the upkeep is not a treadmill you walk alone. It is a relationship. We stay with you, ease off the stronger tools once your skin is clear, and step back in if it flares. Managed this way, melasma becomes something handled with a team that knows your skin, on your terms, rather than something you fight by yourself.</p>
+<div class="keytake"><span class="eyebrow">The realistic goal</span><p>Not one dramatic before-and-after, but clear, even skin that stays that way, because the protection behind it never fully stops. That is a result you can keep.</p></div>
 </section>
 <section class="block">
 <span class="bnum">07 · Our approach</span>
 <h2>How Metropolis treats melasma on deeper skin</h2>
-<p>Our providers and our technology were both chosen to care for the full range of skin tones, and melasma is exactly the condition that tests whether a practice means it. We lead with diagnosis, build the plan from protection up, and reach for procedures only when they are the right tool and the skin is ready, never as a first swing.</p>
-<p>Skin-of-color pigmentation is a focus of Dr. Shauna Higgins, who leads this care at Metropolis. That named expertise is the point: melasma on deeper skin is not a menu item, it is a judgment call made many times over, and it belongs with a dermatologist who makes it every week. If melasma is what brought you in, let's start by confirming what it actually is, and building the plan from there.</p>
+<p>Our providers and our technology were both chosen to care for the full range of skin tones, and melasma is exactly the condition that tests whether a practice means it. We lead with diagnosis, build from protection up, and reach for procedures only when they are the right tool and the skin is ready, never as a first swing.</p>
+<p>Skin-of-color pigmentation is a focus of Dr. Shauna Higgins, who leads this care at Metropolis. That named expertise is the point: melasma on deeper skin is not a menu item, it is a judgment made many times over, and it belongs with a dermatologist who makes it every week.</p>
+<p>And melasma is often the door in. Once we know your skin, we care for all of it, medical and cosmetic, for every skin type. If melasma is what brought you in, let's start by confirming what it actually is, and build from there.</p>
+<div class="localmod">
+<p class="eyebrow" style="margin-bottom:.4rem;">Where to see us for this</p>
+<div class="loc"><b>Downtown LA</b><span>Our most diverse office and the inclusive-care lead market.</span></div>
+<div class="loc"><b>San Jose</b><span>Deep Fitzpatrick diversity across our South Bay patient community.</span></div>
+<div class="loc"><b>Pasadena, Brentwood, Costa Mesa</b><span>Melasma care across all five California offices.</span></div>
+<p class="review" style="margin-top:.6rem;display:block;">Confirm which locations lead melasma-on-skin-of-color care and the provider assigned per market (e.g. Dr. Higgins). SEO note: confirm the live SERP is explainer vs provider-finder intent before publish, if finder-intent, this local layer moves up and each location links to its page.</p>
+</div>
 <div class="video">
 <div class="play"></div>
-<div class="vlabel">Dr. Shauna Higgins on treating melasma in skin of color <span class="review">Provider video: Dr. Higgins records a 2 to 3 minute explainer (iPhone quality is fine). YouTube-optimized, embedded here, transcript repurposed into the cluster articles. This is the provider-video anchor for the pillar, and the fastest path to pre-validated E-E-A-T.</span></div>
+<div class="vlabel">Dr. Shauna Higgins on treating melasma in skin of color <span class="review">Provider video: Dr. Higgins records a 2 to 3 minute explainer (iPhone quality is fine). YouTube-optimized, embedded here, transcript repurposed into the cluster articles. This is the provider-video anchor and the fastest path to pre-validated E-E-A-T.</span></div>
 </div>
 <div class="byline-card">
 <div class="pic"><span>headshot</span></div>
 <div>
 <h3>Dr. Shauna Higgins</h3>
 <p class="role">Board-certified dermatologist · Skin of color lead</p>
-<p class="cred">Reviews and signs off on the clinical content of this page. <span class="review">Link to Dr. Higgins' full bio once live. Full bio + credential verification per the provider-bio standard.</span></p>
+<p class="cred">Leads and signs off on the clinical content of this page. <span class="review">Link to Dr. Higgins' full bio once live; full bio + credential verification per the provider-bio standard.</span></p>
 </div>
+</div>
+<div class="midcta">
+<p>Melasma is treatable on deeper skin. It starts with getting the diagnosis right.</p>
+<a class="textlink" href="#book">Talk to a dermatologist →</a>
 </div>
 </section>
 <section class="block" id="faq">
 <span class="bnum">08 · Common questions</span>
 <h2>Common questions about melasma on skin of color</h2>
 <div class="faq">
-<details><summary>Can melasma be cured?<span></span></summary><p>Melasma is controlled rather than cured. With the right plan it can fade substantially and stay quiet, but it has a tendency to return if the daily protection and maintenance stop, which is why the plan is built to be sustainable. <span class="review">Dr. Higgins: confirm this framing.</span></p></details>
-<details><summary>Is laser safe for melasma on darker skin?<span></span></summary><p>Sometimes, in trained hands and at conservative settings, but it is never a first step and never the whole plan. Some lasers can trigger rebound pigment or uneven lightening on deeper skin, so we treat energy devices as a careful, later option and avoid the aggressive ones entirely. <span class="review">Dr. Higgins: confirm which devices you use or avoid for melasma on deeper skin.</span></p></details>
-<details><summary>What is the difference between melasma and dark spots from a breakout?<span></span></summary><p>Dark spots left by a breakout or irritation are post-inflammatory hyperpigmentation, which is common on skin of color and usually fades with a gentler plan. Melasma is a separate, hormone- and light-driven pattern that behaves differently. Telling them apart is the first thing we do, because they are treated differently. <span class="review">Dr. Higgins: confirm.</span></p></details>
-<details><summary>Will hydroquinone lighten my skin permanently?<span></span></summary><p>Used as prescribed, in defined courses and under a dermatologist's supervision, it lightens the overactive pigment, not your natural skin tone. The concern on deeper skin is long, unsupervised use, which is why we prescribe it deliberately and monitor it. <span class="review">Dr. Higgins: confirm.</span></p></details>
+<details><summary>Can melasma be cured?<span></span></summary><p>Melasma is controlled rather than cured. With the right approach it can fade substantially and stay quiet, but it tends to return if the daily protection and maintenance stop, which is why we build a plan you can actually keep up. <span class="review">Dr. Higgins: confirm this framing.</span></p></details>
+<details><summary>Is laser safe for melasma on deeper skin tones?<span></span></summary><p>Sometimes, in trained hands and at conservative settings, but it is never a first step and never the whole plan. Some lasers can trigger rebound pigment or uneven lightening on deeper skin, so we treat energy devices as a careful, later option and avoid the aggressive ones entirely. <span class="review">Dr. Higgins: confirm which devices you use or avoid for melasma on deeper skin.</span></p></details>
+<details><summary>What is the difference between melasma and dark spots from a breakout?<span></span></summary><p>Dark spots left by a breakout or irritation are post-inflammatory hyperpigmentation, common on skin of color and usually improved with a gentler approach. Melasma is a separate, hormone- and light-driven pattern that behaves differently. Telling them apart is the first thing we do, because they are treated differently. <span class="review">Dr. Higgins: confirm.</span></p></details>
+<details><summary>Will hydroquinone lighten my natural skin tone?<span></span></summary><p>Used as prescribed, in defined courses and under a dermatologist's supervision, it lightens the overactive pigment, not your natural skin tone. The concern on deeper skin is long, unsupervised use, which is why we prescribe it deliberately and monitor it. <span class="review">Dr. Higgins: confirm.</span></p></details>
 <details><summary>Is it safe to treat melasma during pregnancy?<span></span></summary><p>Some treatments are set aside in pregnancy and others, such as azelaic acid and diligent protection, are generally considered appropriate, but this is a decision to make with your dermatologist and your obstetrician, not from a page. We build a pregnancy-safe plan when that is the situation. <span class="review">Dr. Higgins: confirm the pregnancy-safe framing.</span></p></details>
-<details><summary>How long until I see a difference?<span></span></summary><p>Most people see gradual change over several weeks to a few months, not days. Melasma responds to consistency, so the plan is built to be something you can actually keep up. <span class="review">Dr. Higgins: confirm typical timeline.</span></p></details>
+<details><summary>How long until I see a difference?<span></span></summary><p>Most people see gradual change over several weeks to a few months, not days. Melasma responds to consistency, so the plan is built to be something you can keep up. <span class="review">Dr. Higgins: confirm typical timeline.</span></p></details>
 </div>
 
 </section>
 </div>
 <aside class="rail" id="consult">
-<div class="rail-card">
+<div class="rail-card" id="book">
 <p class="eyebrow">Start here</p>
-<h3>Talk to a dermatologist</h3>
-<p>Melasma on deeper skin is treatable, once it is correctly diagnosed and the plan is built for your skin. Let's start there.</p>
-<a class="btn block on" href="#book">Talk to a dermatologist</a>
-<p class="fine">We will confirm what the pigment actually is before recommending anything. <span class="review">Wire to the scheduler (Klara) with the location token. Confirm the consult is with, or overseen by, a dermatologist; some providers are NP-C or PA-C, otherwise use "Talk to our dermatology team."</span></p>
+<h3>Let's find out what it actually is.</h3>
+<p>You can have clear, even skin that stays clear. On deeper skin, that starts with confirming what the pigment really is, before anyone recommends a single treatment.</p>
+<a class="btn block on" href="#">Talk to a dermatologist</a>
+<p class="fine">A first visit is a diagnosis and a plan, not a hard sell. We confirm what the pigment is before recommending anything. <span class="review">Wire to the scheduler (Klara) with the location token. Confirm the consult is with, or overseen by, a dermatologist; some providers are NP-C or PA-C, otherwise use "Talk to our dermatology team."</span></p>
 </div>
 <div class="rail-related">
 <p class="eyebrow">Explore this topic</p>
 <ul class="clusters">
 <li><a href="#">Melasma vs. post-inflammatory hyperpigmentation <span class="ar">→</span></a></li>
 <li><a href="#">Oral tranexamic acid for melasma: who it is for <span class="ar">→</span></a></li>
-<li><a href="#">Chemical peels on darker skin, done safely <span class="ar">→</span></a></li>
-<li><a href="#">Sunscreen for melanin-rich skin: why tint matters <span class="ar">→</span></a></li>
+<li><a href="#">Chemical peels on deeper skin, done safely <span class="ar">→</span></a></li>
+<li><a href="#">Sunscreen for deeper skin tones: why tint matters <span class="ar">→</span></a></li>
 <li><a href="#">Dermatology for skin of color <span class="ar">→</span></a></li>
 </ul>
 <p class="fine" style="font-size:.72rem;color:var(--ink-faint);margin-top:.8rem;"></p>
@@ -340,6 +385,7 @@
 </aside>
 </div>
 </div>
+<div class="mcta"><a href="#book">Talk to a dermatologist</a></div>
 <footer>
 <div class="wrap foot-in">
 <span>Metropolis Dermatology</span>
