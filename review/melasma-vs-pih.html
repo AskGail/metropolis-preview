@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Melasma vs. Post-Inflammatory Hyperpigmentation: How to Tell Dark Patches Apart | Metropolis Dermatology</title>
+<style>
+  :root{
+    --paper:#E8E3D9;--paper-2:#E1DBCF;--card:#F1EDE5;
+    --ink:#211A15;--ink-soft:#6B5D4F;--ink-faint:#9A8D7D;
+    --line:#D3C9B9;--line-strong:#C3B7A3;
+    --clay:#8A4A2E;--clay-deep:#743C24;
+    --review-bg:#F3E3D0;--review-line:#C99A6C;
+    --s1:#EBD3BB;--s2:#DCB790;--s3:#C99A6C;--s4:#AE7346;--s5:#8C5433;--s6:#623A25;--s7:#38241C;
+    --serif:"Hoefler Text","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:ui-sans-serif,-apple-system,"Helvetica Neue","Segoe UI",Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;--wrap:1160px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+    font-size:clamp(1rem,.97rem + .18vw,1.06rem);line-height:1.72;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;letter-spacing:-.012em;text-wrap:balance;}
+  p{margin:0;}a{color:inherit;}img{max-width:100%;display:block;}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(1.25rem,4vw,2.75rem);}
+  .eyebrow{font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--clay);}
+  .eyebrow.on-dark{color:#D9B79B;}
+  .lede{font-size:clamp(1.06rem,1rem + .5vw,1.28rem);line-height:1.6;color:var(--ink-soft);}
+  .whisper{height:3px;display:grid;grid-template-columns:repeat(7,1fr);}
+  .whisper span:nth-child(1){background:var(--s1);}.whisper span:nth-child(2){background:var(--s2);}
+  .whisper span:nth-child(3){background:var(--s3);}.whisper span:nth-child(4){background:var(--s4);}
+  .whisper span:nth-child(5){background:var(--s5);}.whisper span:nth-child(6){background:var(--s6);}
+  .whisper span:nth-child(7){background:var(--s7);}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--sans);font-weight:600;font-size:.82rem;
+    letter-spacing:.1em;text-transform:uppercase;padding:1rem 1.6rem;border:1px solid var(--ink);cursor:pointer;
+    transition:background .2s,color .2s;min-height:52px;background:var(--ink);color:var(--paper);text-decoration:none;}
+  .btn:hover{background:transparent;color:var(--ink);}
+  .btn.block{width:100%;}
+  a.textlink{display:inline-flex;align-items:center;min-height:44px;font-size:.82rem;font-weight:600;letter-spacing:.06em;
+    color:var(--ink);text-decoration:none;border-bottom:1px solid var(--clay);padding:.3rem 0;}
+  a.textlink:hover{color:var(--clay);}
+
+  /* review marks (YMYL) */
+  .review{background:var(--review-bg);border-bottom:1px dashed var(--review-line);color:var(--clay-deep);
+    font-size:.9em;padding:0 .25em;border-radius:2px;}
+  .review::before{content:"⚑ ";font-size:.85em;}
+
+  header.nav{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 92%,transparent);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:72px;}
+  .mark{font-family:var(--serif);font-size:1.34rem;letter-spacing:.06em;text-decoration:none;color:var(--ink);}
+  .mark small{display:block;font-family:var(--sans);font-size:.54rem;letter-spacing:.4em;text-transform:uppercase;color:var(--ink-soft);margin-top:3px;font-weight:600;}
+  .nav-cta{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--clay);padding:.4rem 0;min-height:44px;display:inline-flex;align-items:center;}
+
+  .crumb{border-bottom:1px solid var(--line);}
+  .crumb-in{padding:.9rem 0;font-size:.74rem;letter-spacing:.06em;color:var(--ink-faint);display:flex;gap:.5rem;flex-wrap:wrap;}
+  .crumb-in a{color:var(--ink-soft);text-decoration:none;}
+  .crumb-in a:hover{color:var(--clay);}
+  .crumb-in span{color:var(--ink-faint);}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;}
+  .hero .photo{position:absolute;inset:0;background:linear-gradient(120deg,var(--s3) 0%,var(--s4) 40%,var(--s6) 100%);}
+  .hero .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,15,11,.8),rgba(20,15,11,.45));}
+  .hero .plabel{position:absolute;left:20px;bottom:14px;z-index:2;font-family:var(--mono);font-size:.64rem;color:rgba(255,255,255,.8);letter-spacing:.05em;}
+  .hero-in{position:relative;z-index:2;padding:clamp(3rem,7vw,5.5rem) 0;max-width:720px;color:#F2ECE2;}
+  .hero h1{color:#F6F1E8;font-size:clamp(2.3rem,1.5rem + 3.4vw,3.8rem);margin-top:.9rem;}
+  .hero .lede{color:#E7DDCE;margin-top:1.3rem;max-width:48ch;}
+  .hero .row{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap;margin-top:2rem;}
+  .hero .byline{margin-top:1.4rem;font-size:.82rem;color:#D9C9B6;}
+
+  /* two-col layout */
+  .layout{display:grid;grid-template-columns:1fr 340px;gap:clamp(2rem,5vw,4rem);padding:clamp(3rem,6vw,5rem) 0;align-items:start;}
+  @media(max-width:920px){.layout{grid-template-columns:1fr;}}
+  .content .block{padding:clamp(2rem,4vw,2.8rem) 0;border-top:1px solid var(--line);}
+  .content .block:first-child{border-top:0;padding-top:0;}
+  .content .block .bnum{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--clay);text-transform:uppercase;}
+  .content h2{font-size:clamp(1.5rem,1.2rem + 1.4vw,2.1rem);margin:.5rem 0 1rem;}
+  .content h3{font-size:1.14rem;font-weight:600;margin:1.4rem 0 .4rem;}
+  .content p{max-width:64ch;margin-bottom:1rem;}
+  .content ul{max-width:64ch;padding-left:0;list-style:none;margin:1rem 0;}
+  .content ul li{padding-left:1.4rem;position:relative;margin-bottom:.7rem;}
+  .content ul li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;background:var(--clay);border-radius:50%;}
+  .callout{background:var(--card);border-left:2px solid var(--clay);padding:1.2rem 1.4rem;border-radius:2px;margin:1.4rem 0;max-width:64ch;}
+  .callout p{margin:0;font-size:.96rem;}
+
+  .compare{width:100%;border-collapse:collapse;margin:1.2rem 0;max-width:64ch;font-size:.94rem;}
+  .compare th,.compare td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid var(--line);vertical-align:top;}
+  .compare th{font-family:var(--sans);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;}
+  .compare td:first-child{font-weight:600;width:38%;}
+
+  .proof{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0;max-width:64ch;}
+  @media(max-width:520px){.proof{grid-template-columns:1fr;}}
+  .proof .ba{aspect-ratio:1/1;border-radius:2px;position:relative;overflow:hidden;
+    background:linear-gradient(140deg,var(--s5),var(--s6));border:1px solid var(--line);}
+  .proof .ba span{position:absolute;left:12px;bottom:10px;font-family:var(--mono);font-size:.6rem;color:rgba(255,255,255,.82);}
+
+  /* provider byline */
+  .byline-card{display:flex;gap:1.2rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1.4rem;margin-top:1rem;max-width:64ch;}
+  .byline-card .pic{width:74px;height:90px;border-radius:2px;flex:none;background:linear-gradient(150deg,var(--s6),var(--s4));position:relative;}
+  .byline-card .pic span{position:absolute;inset:auto 0 6px 0;text-align:center;font-family:var(--mono);font-size:.52rem;color:rgba(255,255,255,.75);}
+  .byline-card h3{font-size:1.2rem;margin:0;}
+  .byline-card .role{font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);font-weight:600;margin-top:.3rem;}
+  .byline-card .cred{font-size:.8rem;color:var(--ink-soft);margin-top:.5rem;}
+
+  /* FAQ */
+  .faq{max-width:64ch;}
+  .faq details{border-top:1px solid var(--line);padding:1rem 0;}
+  .faq details[open] summary{color:var(--clay);}
+  .faq summary{font-family:var(--serif);font-size:1.1rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+";color:var(--clay);font-family:var(--sans);}
+  .faq details[open] summary::after{content:"-";}
+  .faq details p{margin:.9rem 0 0;color:var(--ink-soft);font-size:.96rem;}
+
+  /* sticky rail */
+  .rail{position:sticky;top:96px;display:flex;flex-direction:column;gap:1.2rem;}
+  @media(max-width:920px){.rail{position:static;}}
+  .rail-card{background:var(--ink);color:var(--paper);border-radius:4px;padding:1.6rem;}
+  .rail-card .eyebrow{color:#D9B79B;}
+  .rail-card h3{color:#F6F1E8;font-size:1.3rem;margin:.6rem 0 .5rem;}
+  .rail-card p{font-size:.9rem;color:#CDBFAE;margin-bottom:1.2rem;}
+  .rail-card .btn.on{background:#F1EDE5;color:var(--ink);border-color:#F1EDE5;}
+  .rail-card .fine{font-size:.72rem;color:#A99A88;margin-top:.9rem;}
+  .rail-related{border:1px solid var(--line);border-radius:4px;padding:1.4rem;background:var(--paper-2);}
+  .rail-related .eyebrow{color:var(--clay);}
+  .rail-related ul{list-style:none;padding:0;margin:.9rem 0 0;}
+  .rail-related li{border-top:1px solid var(--line);}
+  .rail-related li:first-child{border-top:0;}
+  .rail-related a{display:flex;justify-content:space-between;align-items:center;padding:.7rem 0;min-height:48px;font-size:.92rem;color:var(--ink);text-decoration:none;}
+  .rail-related a:hover{color:var(--clay);}
+  .rail-related a .ar{color:var(--clay);}
+
+  footer{padding:3rem 0;background:var(--paper-2);border-top:1px solid var(--line);}
+  .foot-in{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;align-items:center;color:var(--ink-soft);font-size:.82rem;}
+
+  .notes{background:#231A14;color:#C9BCAB;}
+  .notes .wrap{padding:clamp(3rem,6vw,4.5rem) clamp(1.25rem,4vw,2.75rem);}
+  .notes h2{color:#F1EAE0;font-size:clamp(1.4rem,1.2rem + 1.2vw,2rem);font-weight:500;}
+  .notes .grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem 2.6rem;margin-top:1.8rem;}
+  @media(max-width:720px){.notes .grid{grid-template-columns:1fr;}}
+  .notes .n{border-left:1px solid #6d4a30;padding-left:1.1rem;}
+  .notes .n h4{font-family:var(--sans);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#D9B79B;margin:0 0 .3rem;}
+  .notes .n p{font-size:.88rem;color:#BCAF9F;}
+  .notes .gate{margin-top:1.8rem;border-top:1px solid #6d4a30;padding-top:1.3rem;font-size:.86rem;color:#BCAF9F;}
+  :focus-visible{outline:2px solid var(--clay);outline-offset:3px;}
+
+  .review{display:none;} body.shownotes .review{display:inline;}
+  .internal{display:none;}
+  body.shownotes .internal{display:block;border:1px dashed #2F5E5A;background:#E6EEEC;color:#173a37;border-radius:3px;padding:.85rem 1.05rem;margin:1.15rem 0;max-width:66ch;font-size:.88rem;line-height:1.55;}
+  body.shownotes .internal b{color:#0f2b29;}
+  .article{max-width:720px;margin:0 auto;padding:clamp(2.4rem,5vw,4rem) 0;}
+  .article .block{padding:clamp(1.6rem,3vw,2.2rem) 0;border-top:1px solid var(--line);}
+  .article .block:first-of-type{border-top:0;}
+  .article h2{font-size:clamp(1.4rem,1.1rem + 1.3vw,1.9rem);margin:.3rem 0 .9rem;}
+  .article h3{font-size:1.1rem;font-weight:600;margin:1.2rem 0 .3rem;}
+  .article p{max-width:68ch;margin-bottom:1rem;}
+  .article ul{max-width:68ch;padding-left:0;list-style:none;margin:1rem 0;}
+  .article ul li{padding-left:1.4rem;position:relative;margin-bottom:.6rem;}
+  .article ul li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;background:var(--clay);border-radius:50%;}
+  .content a.ilink{color:var(--clay-deep);border-bottom:1px solid var(--review-line);} .content a.ilink:hover{color:var(--clay);}
+  .keytake{background:var(--card);border:1px solid var(--line);border-left:2px solid var(--clay);border-radius:2px;padding:1.2rem 1.4rem;margin:1.4rem 0;max-width:68ch;}
+  .keytake .eyebrow{margin-bottom:.5rem;display:block;}
+  .pillbox{display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--paper-2);border:1px solid var(--line-strong);border-radius:4px;padding:1.1rem 1.4rem;margin:1.6rem 0;max-width:68ch;}
+  .pillbox .pl{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);font-weight:700;display:block;margin-bottom:.2rem;}
+  .pillbox p{margin:0;font-size:.98rem;color:var(--ink);} .pillbox a{white-space:nowrap;}
+  .midcta{display:flex;gap:1rem 1.4rem;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--ink);border-radius:4px;padding:1.3rem 1.5rem;margin:1.8rem 0;max-width:68ch;}
+  .midcta p{margin:0;font-size:1rem;color:#EDE2D2;max-width:40ch;} .midcta a.on{background:#F1EDE5;color:var(--ink);border-color:#F1EDE5;}
+  .related{max-width:68ch;margin-top:1rem;} .related ul{list-style:none;padding:0;margin:.8rem 0 0;}
+  .related li{border-top:1px solid var(--line);} .related li:first-child{border-top:0;}
+  .related a{display:flex;justify-content:space-between;gap:1rem;align-items:center;padding:.8rem 0;min-height:48px;color:var(--ink);text-decoration:none;font-size:.96rem;} .related a:hover{color:var(--clay);} .related .ar{color:var(--clay);}
+  .mcta{display:none;}
+  @media(max-width:920px){.mcta{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:40;align-items:center;background:#211A15;padding:.6rem .8rem;border-top:1px solid #3a2c22;box-shadow:0 -6px 20px rgba(0,0,0,.18);}
+    .mcta a{flex:1;text-align:center;background:#F1EDE5;color:#211A15;border:1px solid #F1EDE5;font-family:var(--sans);font-weight:700;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;padding:.8rem 1rem;border-radius:2px;text-decoration:none;min-height:48px;display:flex;align-items:center;justify-content:center;}
+    body{padding-bottom:72px;}}
+  .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  @media(max-width:560px){
+    .compare thead{display:none;} .compare,.compare tbody,.compare tr,.compare td{display:block;width:auto;}
+    .compare tr{border:1px solid var(--line);border-radius:3px;margin-bottom:.9rem;padding:.55rem .3rem;}
+    .compare td{border:0;padding:.28rem .9rem;} .compare td:first-child{width:auto;font-size:1.02rem;color:var(--clay-deep);font-weight:600;}
+    .compare td[data-l]::before{content:attr(data-l);display:block;font-size:.58rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;margin:.45rem 0 .1rem;}}
+  .faq summary{min-height:48px;align-items:center;}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"MedicalWebPage","name":"Melasma vs. Post-Inflammatory Hyperpigmentation",
+  "url":"https://metropolisdermatology.com/melasma-vs-pih/",
+  "about":[{"@type":"MedicalCondition","name":"Melasma"},{"@type":"MedicalCondition","name":"Post-inflammatory hyperpigmentation"}],
+  "audience":{"@type":"PeopleAudience","description":"Patients with Fitzpatrick skin types III to VI"},
+  "isPartOf":{"@type":"MedicalWebPage","name":"Melasma on Skin of Color","url":"https://metropolisdermatology.com/melasma-skin-of-color/"}},
+ {"@type":"BreadcrumbList","itemListElement":[
+   {"@type":"ListItem","position":1,"name":"Home","item":"https://metropolisdermatology.com/"},
+   {"@type":"ListItem","position":2,"name":"Skin of Color","item":"https://metropolisdermatology.com/dermatology-for-skin-of-color/"},
+   {"@type":"ListItem","position":3,"name":"Melasma on Skin of Color","item":"https://metropolisdermatology.com/melasma-skin-of-color/"},
+   {"@type":"ListItem","position":4,"name":"Melasma vs. PIH"}]}
+]}
+</script>
+</head>
+<body class="shownotes">
+<div style="background:#8A4A2E;color:#F6ECE6;font-family:ui-sans-serif,-apple-system,"Helvetica Neue",Arial,sans-serif;padding:.8rem 1.25rem;font-size:.86rem;line-height:1.45;text-align:center;"><b>REVIEW DRAFT</b> &middot; The highlighted &#9873; notes are questions for you. These are design and copy comps; photography is placeholder. Please send any changes to Rick and your Tier3 team. &middot; <a href="./" style="color:#F6ECE6;text-decoration:underline;">All pages</a> &middot; <a href="../" style="color:#F6ECE6;text-decoration:underline;">View without notes</a></div><header class="nav">
+<div class="wrap nav-in">
+<a class="mark" href="#">Metropolis<small>Dermatology</small></a>
+<a class="nav-cta" href="#book">Talk to a dermatologist</a>
+</div>
+</header>
+<nav aria-label="Breadcrumb" class="crumb">
+<div class="wrap crumb-in">
+<a href="#">Home</a><span>/</span><a href="#">Skin of Color</a><span>/</span><a href="./melasma-skin-of-color.html">Melasma</a><span>/</span><span>Melasma vs. PIH</span>
+</div>
+</nav>
+<div class="wrap content">
+<div class="article">
+<p class="eyebrow">Skin of color · Pigmentation</p>
+<h1 style="font-size:clamp(2rem,1.4rem + 2.6vw,3rem);margin:.6rem 0 1rem;">Melasma vs. dark spots from a breakout: how to tell them apart.</h1>
+<p class="lede" style="max-width:60ch;">Two of the most common pigment problems on deeper skin look almost identical, and they are treated very differently. Telling them apart is the step that decides whether treatment works, or quietly makes things worse.</p>
+<p class="byline" style="margin-top:1.2rem;color:var(--ink-soft);font-size:.86rem;">Clinical review lead: <strong>Dr. Shauna Higgins</strong>, board-certified dermatologist <span class="review">Non-asserting until sign-off. Flips to "Medically reviewed by Dr. Higgins" + date, and the reviewedBy schema is added, at sign-off. Same YMYL gate as the pillar.</span></p>
+<div class="pillbox">
+<p><span class="pl">Part of our complete guide</span>This article goes deep on one question. For the full picture, see <strong>Melasma on skin of color</strong>.</p>
+<a class="textlink" href="./melasma-skin-of-color.html">Read the guide →</a>
+</div>
+<section class="block">
+<h2>Why this one distinction matters so much</h2>
+<p>If you have brown or grey-brown patches on deeper skin, there is a good chance you have wondered whether it is melasma or the mark left behind by an old breakout. It is a fair question, because to the eye they can look the same. But they come from different places, behave differently over time, and respond to different treatment. Get the two confused and the plan that helps one can worsen the other.</p>
+<p>On skin of color this matters more than on lighter skin, for one reason: both conditions are driven, in part, by pigment cells that overreact, and both can be made worse by anything that inflames the skin. Treating the wrong one aggressively is how people end up with more pigment than they started with. So the honest first step is not a product. It is figuring out which one you actually have.</p>
+</section>
+<section class="block">
+<h2>What each one actually is</h2>
+<h3>Melasma</h3>
+<p>Melasma is a light- and hormone-driven pattern of pigment. It tends to appear symmetrically, on the cheeks, forehead, upper lip, and bridge of the nose, without any injury coming first. It is chronic and relapsing, which means it is managed over time rather than cured in a course. <a class="ilink" href="./melasma-skin-of-color.html">Our full melasma guide covers how it is treated →</a></p>
+<h3>Post-inflammatory hyperpigmentation (PIH)</h3>
+<p>PIH is pigment left behind after the skin has been inflamed or injured, a breakout, a bug bite, eczema, an ingrown hair, a scratch, or a cosmetic procedure that was too harsh. It shows up exactly where the insult was, in the shape of whatever caused it. Unlike melasma, PIH often fades on its own over months once the inflammation is gone, though on deeper skin it can be stubborn and take longer.</p>
+</section>
+<section class="block">
+<h2>The differences, side by side</h2>
+<div class="tablewrap">
+<table class="compare">
+<thead><tr><th> </th><th>Melasma</th><th>PIH (dark spots after inflammation)</th></tr></thead>
+<tbody>
+<tr><td>What causes it</td><td data-l="Melasma">Sunlight, visible light, hormones, and heat, no injury first</td><td data-l="PIH">A specific prior insult: acne, eczema, a bite, a scratch, a procedure</td></tr>
+<tr><td>Where it appears</td><td data-l="Melasma">Symmetrical, typically cheeks, forehead, upper lip, nose</td><td data-l="PIH">Exactly where the inflammation was, any location, often asymmetric</td></tr>
+<tr><td>The pattern</td><td data-l="Melasma">Broad, blotchy patches with soft edges</td><td data-l="PIH">Spots or marks in the shape of what caused them</td></tr>
+<tr><td>Over time</td><td data-l="Melasma">Chronic and relapsing, managed long-term</td><td data-l="PIH">Often fades once the cause is controlled, slower on deeper skin</td></tr>
+<tr><td>On deeper skin</td><td data-l="Melasma">More common and more stubborn; visible light is a key driver</td><td data-l="PIH">Very common; the deeper the skin, the more readily it forms</td></tr>
+</tbody>
+</table>
+</div>
+<div class="keytake"><span class="eyebrow">The tell that helps most</span><p>Ask what came first. If a breakout, a rash, or an injury sat there before the mark appeared, it is probably PIH. If the patches arrived on their own, symmetrically, and track with sun and hormones, it points to melasma.</p></div>
+</section>
+<section class="block">
+<h2>How a dermatologist tells them apart</h2>
+<p>The history is the biggest clue, but it is not the only one, and on deeper skin the stakes are too high to guess. A dermatologist reads several things together:</p>
+<ul>
+<li><strong>The story.</strong> Was there a breakout, rash, or procedure at that exact spot first? PIH follows an insult; melasma does not.</li>
+<li><strong>The distribution.</strong> Symmetrical patches across the face suggest melasma; marks that map to old blemishes suggest PIH.</li>
+<li><strong>A closer look.</strong> Tools like a Wood's lamp or dermoscopy can help judge how deep the pigment sits, which affects how, and how quickly, it will respond. This read is a guide, not a verdict, which is part of why an in-person exam matters.</li>
+</ul>
+<p class="review">Dr. Higgins: confirm how you distinguish these at the visit and correct any wording. Note the honest limit that a Wood's lamp does not fully separate mixed cases or predict response.</p>
+</section>
+<section class="block">
+<h2>They can also happen together</h2>
+<p>This is the part that makes self-diagnosis risky: melasma and PIH often coexist on the same face, and a melasma patch can pick up PIH on top of it if it is treated too aggressively. When both are present, the plan has to address each without provoking the other. That balance is difficult to strike from a bathroom shelf, and easy to get wrong with a strong product or an aggressive in-office treatment.</p>
+</section>
+<section class="block">
+<h2>Why the label changes the treatment</h2>
+<p>Once the diagnosis is clear, the two plans diverge. Melasma is managed with light and visible-light protection, careful topicals, and conservative in-office steps, over the long term. PIH is treated first by calming whatever is inflaming the skin (getting the acne or eczema under control), and only then by fading the marks, gently, because anything harsh can restart the very inflammation that caused them.</p>
+<p>What both share, on skin of color, is the same golden rule: avoid triggering more pigment than you resolve. That is why the right first move for either one is the same, an accurate diagnosis, then a plan built for your skin. <a class="ilink" href="./melasma-skin-of-color.html">See the full melasma treatment ladder →</a></p>
+<div class="midcta">
+<p>Not sure which one you are looking at? That is exactly what the first visit is for.</p>
+<a class="btn on" href="#book">Talk to a dermatologist</a>
+</div>
+</section>
+<section class="block" id="faq">
+<h2>Common questions</h2>
+<div class="faq">
+<details><summary>Can I have both melasma and PIH at the same time?<span></span></summary><p>Yes, and it is common on deeper skin. They can overlap on the same area, which is one reason self-diagnosis is unreliable and an in-person exam is worth it. <span class="review">Dr. Higgins: confirm.</span></p></details>
+<details><summary>Will dark spots from a breakout go away on their own?<span></span></summary><p>Post-inflammatory hyperpigmentation often fades over months once the underlying inflammation is controlled, though on deeper skin it can be slow and stubborn. Protecting the skin and treating the cause speeds it up; picking or harsh products slow it down. <span class="review">Dr. Higgins: confirm timeline framing.</span></p></details>
+<details><summary>Is one harder to treat than the other?<span></span></summary><p>They are different, not simply harder or easier. PIH usually improves once its cause is calmed; melasma is chronic and managed over time. What they share on skin of color is that aggressive treatment can worsen either one. <span class="review">Dr. Higgins: confirm.</span></p></details>
+</div>
+
+</section>
+<div class="related">
+<p class="eyebrow">Keep reading</p>
+<ul>
+<li><a href="./melasma-skin-of-color.html">Melasma on skin of color: the complete guide <span class="ar">→</span></a></li>
+<li><a href="#">Oral tranexamic acid for melasma: who it is for <span class="ar">→</span></a></li>
+<li><a href="#">Dermatology for skin of color <span class="ar">→</span></a></li>
+</ul>
+<p class="fine" style="font-size:.72rem;color:var(--ink-faint);margin-top:.8rem;"></p>
+</div>
+<div class="pillbox" id="book" style="background:var(--ink);border-color:var(--ink);">
+<p style="color:#EDE2D2;"><span class="pl" style="color:#D9B79B;">Start here</span>You can have clear, even skin that stays clear. It starts with knowing what the pigment actually is, before anyone recommends a treatment.</p>
+<a class="btn on-dark" href="#" style="background:#F1EDE5;color:#211A15;border-color:#F1EDE5;">Talk to a dermatologist</a>
+</div>
+<p class="fine" style="max-width:68ch;font-size:.8rem;color:var(--ink-faint);">A first visit is a diagnosis and a plan, not a hard sell. <span class="review">Wire to Klara with the location token; confirm the consult is with or overseen by a dermatologist, else "Talk to our dermatology team."</span></p>
+</div>
+</div>
+<div class="mcta"><a href="#book">Talk to a dermatologist</a></div>
+<footer>
+<div class="wrap foot-in">
+<span>Metropolis Dermatology</span>
+<span>Medical and cosmetic dermatology for every skin type, across California.</span>
+</div>
+</footer>
+</body>
+</html>
